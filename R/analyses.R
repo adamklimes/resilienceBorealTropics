@@ -536,8 +536,8 @@ modPotE <- calcEffPotE(modOuts[[which(modsParsS == "RUeviSDOldOld")]], ylab = "C
 modPotE <- calcEffPotE(modOuts[[which(modsParsS == "SAeviSDOldOld")]], ylab = "Change in EVI variability", cf = 0.0001, pos = c(-1, -0.13, 0.025, -9.0, -0.13, 0.025), axis1 = -2:2/10, sepPlots = TRUE)
 par(new = TRUE, fig = c(0,1,0,1), mai = c(0,0,0,0), mfrow = c(1,1))
 plot(0,0, type = "n", axes = FALSE, main = "", xlab = "", ylab = "")
-text(-0.55, 0.99, "Boreal zone", cex = 1, font = 2)
-text(0.55, 0.99, "Tropical zone", cex = 1, font = 2)
+text(-0.55, 0.99, "Boreal transect", cex = 1, font = 2)
+text(0.55, 0.99, "Tropical transect", cex = 1, font = 2)
 
 # Figure S3
 # png("figures/FigS3_tropical.png", height = 4800*2, width = 480*18, res = 72*14)
@@ -680,3 +680,4 @@ rect(ext(filesRU)[1], ext(filesRU)[3], ext(filesRU)[2], ext(filesRU)[4], col = t
 rect(ext(filesSA)[1], ext(filesSA)[3], ext(filesSA)[2], ext(filesSA)[4], col = trcol[2])
 
 #_
+
